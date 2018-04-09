@@ -3,12 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>FrontEnd</title>
-  <base href="/">
+  
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/src/app/app.component.css">
+
 </head>
 <body>
-  <app-root></app-root>
+  <app-root></app-root> 
+    <iframe src="https://map.project-osrm.org/" height="600" width="1200" style=></iframe>
+    <div>
+    	<h2>Parámetros de entrada</h2>
+    	<form>
+    		<strong>Modelo de consumo:</strong>
+    		<select name="modelo_consumo">
+  			    <option value="modelo1">Modelo 1</option>
+            	<option value="modelo2">Modelo 2</option>
+            	<option value="modelo3">Modelo 3</option>
+            </select>
+            <br> 
+    		<strong>Tipo de vehículo:</strong>
+    		<select name="tipo_vehiculo">
+  			    <option value="tipo1">Tipo 1</option>
+            	<option value="tipo2">Tipo 2</option>
+            	<option value="tipo3">Tipo 3</option>
+            </select>
+			<br>
+			<input type="submit" value="Submit">
+			<br>
+			<br>
+			<h2>Resultados</h2>
+			<strong>Distancia: </strong>num km
+			<br><br>
+			<strong>Tiempo: </strong>num min
+			<br><br>
+			<strong>Consumo: </strong>num
+    	</form>
+    </div>
+  </div>
 </body>
 </html>
